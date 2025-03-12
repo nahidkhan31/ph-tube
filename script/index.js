@@ -1,3 +1,4 @@
+// category section
 function loadCategories() {
   //   1-fetch the data
   fetch("https://openapi.programming-hero.com/api/phero-tube/categories")
