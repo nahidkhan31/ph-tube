@@ -8,6 +8,13 @@
       rel="stylesheet"
       type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .active {
+        background: #ff1f3d;
+        color: white;
+      }
+    </style>
+
     <title>ph-tube</title>
   </head>
   <body>
@@ -28,9 +35,7 @@
 
     <nav id="category-container" class="flex py-5 justify-center gap-5">
       <div>
-        <button
-          onclick="loadVideos()"
-          class="btn btn-sm bg-[#FF1F3D] text-white">
+        <button id="btn-all" onclick="loadVideos()" class="btn btn-sm">
           All
         </button>
       </div>
@@ -70,10 +75,19 @@
           </div>
         </div>
       </div> -->
+
+      <div
+        class="py-20 col-span-full text-center flex flex-col justify-center items-center">
+        <img class="" src="logo/Icon.png" alt="" />
+        <h2 class="font-bold text-2xl">
+          Oops!! Sorry, There is no content here
+        </h2>
+      </div>
     </section>
 
     <script src="script/index.js"></script>
     <script src="script/vedio.js"></script>
     <script src="script/category.js"></script>
+    <script src="script/btn.js"></script>
   </body>
 </html>
