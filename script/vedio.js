@@ -5,6 +5,9 @@ function loadVideos() {
 }
 const displayVideos = (videos) => {
   const videoContainer = document.getElementById("video-container");
+
+  videoContainer.innerHTML = "";
+
   videos.forEach((video) => {
     // creat element
     console.log(video);
@@ -47,5 +50,3 @@ const displayVideos = (videos) => {
     videoContainer.append(videoCard);
   });
 };
-
-loadVideos();
